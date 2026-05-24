@@ -1,16 +1,35 @@
-{
-  "name": "stock-trading-backend",
+﻿{
+  "name": "stock-trading-pro",
   "version": "1.0.0",
-  "description": "Complete Stock & Crypto Trading Platform Backend",
-  "main": "src/server.js",
+  "description": "Complete Stock Trading Platform",
+  "main": "backend/src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "test": "jest"
+    "start": "node backend/src/server.js",
+    "dev": "nodemon backend/src/server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
-  "keywords": ["stock", "trading", "crypto", "exchange", "portfolio"],
-  "author": "Your Name",
+  "keywords": ["stock", "trading", "crypto", "api", "finance"],
+  "author": "stocktradingpro",
   "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "express": "^5.2.1",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stocktradingpro/stock-trading-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stocktradingpro/stock-trading-pro/issues"
+  },
+  "homepage": "https://github.com/stocktradingpro/stock-trading-pro#readme"
 }
